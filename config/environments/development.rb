@@ -34,4 +34,7 @@ SampleApp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # lev added
+  config.serve_static_assets = true
 end
