@@ -181,3 +181,39 @@ div.field, div.actions {
     list-style: square;
   }
 }
+
+$grayLighter: #eaeaea;
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
+
+/* pagination */
+.clear{
+  clear: both;
+}
+.pagination{
+  ul li{
+    list-style-type: none;
+    float: left;
+    a{
+      padding: 5px;
+      border: 1px solid $grayLighter;
+    }
+    
+    &.active{
+      background-color: $grayLighter;
+    }
+  }
+
+}
+
