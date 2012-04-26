@@ -5,6 +5,12 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <p>
+        <%= render 'shared/stats' %>
+      </p>
+      <p>
+        <%= render 'follow_form' if signed_in? %>
+      </p>
     </td>
 		<td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />
